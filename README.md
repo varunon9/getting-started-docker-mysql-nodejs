@@ -1,15 +1,18 @@
 # getting started with docker-mysql-nodejs
 
-Running a nodejs application with mysql database as microservices using docker
-using microservice architecture
+Running a nodejs application with mysql database using docker and microservice architecture
 
-### our end goal
+### Our end goal
 
 - Launch mysql server in a docker container.
 - Launch our simple node app in a separate container.
 - Link these two containers and test our integrated mysql-nodejs app.
 
-### prerequisite
+### Youtube link-
+
+Watch this tutorial at https://youtu.be/tIbMSqTEpfY
+
+### Prerequisite
 
 - must have docker set up and running on your system
 
@@ -69,7 +72,7 @@ We are also naming our container as test-mysql-microservice `--name`
 14. We have successfully launched a mysql container
 
 
-### connecting to newly launched mysql container from host (optional)
+### Connecting to newly launched mysql container from host (optional)
 
 To verify that our test-mysql-microservice container is up and running, we'll connect to it.
 Follow below steps if you have mysql (mysql-client) installed on your system.
@@ -144,12 +147,12 @@ Note that we are inside nodejs-microservice directory. `test-nodejs` would be na
 * `--link test-mysql-microservice:db` link to the container named test-mysql-microservice and refer to it as db
 * `--name` naming our container as test-nodejs-microservice
 
-10. How to know your MYSQL_HOST-
+10. How to know your MYSQL_HOST- 
 Note that I am using `172.17.0.2` ip-address as MYSQL_HOST. This is the IpAddress of our test-mysql-microservice container.
 You must replace this value to your container's ipAddress. Use `docker inspect test-mysql-microservice | grep IPAddress`
 
 
-### testing our complete app 
+### Testing our complete app 
 
 If everything is good so far then congratulations :smile: You have a complete app running with two microservices. To test this you can use CURL command from your host machine
 
@@ -162,7 +165,7 @@ Here 192.168.43.147 is my host IpAddress `ifconfig | grep inet`
 
 4. Again fetch all students to see updated results `curl -X POST 192.168.43.147:4000/get-students`
 
-5. Modify sorce code of nodejs app, build image, run container and test again.
+5. Modify source code of nodejs app, build image, run container and test again.
 
 ### Queries/Comments
 
