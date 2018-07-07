@@ -135,14 +135,14 @@ Note that we are inside nodejs-microservice directory. `test-nodejs` would be na
     --link test-mysql-microservice:db \
     --name=test-nodejs-microservice test-nodejs
     ```
-![Running the image using Dockerfile](./screenshots/running-test-nodejs-image.png)
+![Running the image using Dockerfile](./screenshots/running-test-nodejs-microservice-container.png)
 
 9. Explaination of above command-
-`-d` run in detach mode
-`--publish` map the host port 4000 to the container port 4000
-`-e` pass environment variables to nodejs app necessary to make mysql connection (check index.js file)
-`--link test-mysql-microservice:db` link to the container named test-mysql-microservice and refer to it as db
-`--name` naming our container as test-nodejs-microservice
+* `-d` run in detach mode
+* `--publish` map the host port 4000 to the container port 4000
+* `-e` pass environment variables to nodejs app necessary to make mysql connection (check index.js file)
+* `--link test-mysql-microservice:db` link to the container named test-mysql-microservice and refer to it as db
+* `--name` naming our container as test-nodejs-microservice
 
 10. How to know your MYSQL_HOST-
 Note that I am using `172.17.0.2` ip-address as MYSQL_HOST. This is the IpAddress of our test-mysql-microservice container.
