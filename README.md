@@ -46,6 +46,7 @@ On Linux default storage directory is `/var/lib/mysql` but in this tutorial we'l
 Note that we are inside mysql-microservice directory. `test-mysql` would be name of our image
 
 9. you can check your newly built image using `docker images`
+![Building the image using Dockerfile](./screenshots/building-test-mysql-image.png)
 
 10. run the newly created docker image as container 
     ```
@@ -63,6 +64,7 @@ We are also naming our container as test-mysql-microservice `--name`
 12. check logs to see if everything went smooth `docker logs test-mysql-microservice`
 
 13. check your container state `docker ps`
+![Running the docker image](./screenshots/running-test-mysql-microservice-container.png)
 
 14. we have successfully launched a mysql container
 
@@ -83,5 +85,5 @@ use password=password when prompt and hit enter
 
 4. if connected successfully you can see a sample table students `show tables` 
 `exit` when done.
-
+![Connecting to mysql container from host](./screenshots/connecting-to-test-mysql-microservice.png)
 
