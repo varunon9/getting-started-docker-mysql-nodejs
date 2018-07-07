@@ -1,0 +1,31 @@
+{
+  "name": "nodejs-microservice",
+  "version": "1.0.0",
+  "description": "Running a nodejs application with mysql database as microservices using docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varunon9/getting-started-docker-mysql-nodejs.git"
+  },
+  "keywords": [
+    "docker",
+    "mysql-docker",
+    "nodejs-docker",
+    "microservice"
+  ],
+  "author": "Varun Kumar <varunon9@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/varunon9/getting-started-docker-mysql-nodejs/issues"
+  },
+  "homepage": "https://github.com/varunon9/getting-started-docker-mysql-nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mysql": "^2.15.0"
+  }
+}

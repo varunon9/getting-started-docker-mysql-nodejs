@@ -3,3 +3,5 @@ mysql-microservice/data/*
 
 # exception to the rule
 !mysql-microservice/data/.gitkeep
+
+nodejs-microservice/node_modules
