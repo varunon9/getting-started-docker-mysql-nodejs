@@ -42,7 +42,7 @@ Watch this tutorial at https://youtu.be/tIbMSqTEpfY
 Download [test-dump.sql](https://github.com/varunon9/getting-started-docker-mysql-nodejs/blob/master/mysql-microservice/test-dump.sql) and put it inside mysql-microservice folder along with Dockerfile
 
 7. Create a data directory where mysql will store its content `mkdir data`. 
-We will specify this directory wile running our mysql container. 
+We will specify this directory while running our mysql container. 
 On Linux default storage directory is `/var/lib/mysql` but in this tutorial we'll use a custom storage directory.
 
 8. Build the image with Dockerfile `docker build -t test-mysql .` 
