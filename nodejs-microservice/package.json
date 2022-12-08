@@ -25,7 +25,7 @@
   "homepage": "https://github.com/varunon9/getting-started-docker-mysql-nodejs#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "mysql": "^2.15.0"
   }
 }
